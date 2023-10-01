@@ -23,10 +23,29 @@
                 </ul>
             </div>
             <div class="right-nav">
-                <a href="#" class="button">Wi-Learn</a>
+                <a href="#" class="button" onclick="openLoginPopup()">Wi-Learn</a>
             </div>
         </nav>        
     </header>
+
+    <div id="loginPopup" class="popup">
+        <div class="popup-content">
+            <div class="top">
+            <img src="logo.png" alt="Your Logo">
+            <h2>Wawawi</h2>
+            <span class="close" onclick="closeLoginPopup()">&times;</span>
+             </div>
+
+            <form>
+                <label for="username">Email</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" class="signin-button">Sign In</button>
+            </form>
+            <p class="forgot-password">Forgot Password?</p>
+        </div>
+    </div>
     
     <div class="rectangle">
     </div>

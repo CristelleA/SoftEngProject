@@ -365,6 +365,108 @@ input {
     background-color: white; /* Change the hover background color as desired */
 }
 
+/* Style for the popup container */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+/* Style for the popup content */
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #EEE8F8; /* Set the background color to violet */
+    width: 560px; /* Set the desired width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+/* Style for the close button */
+.close {
+    position: absolute;
+    right: 10px;
+    padding: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #FDE5EC; /* Set the close button color to pink */
+}
+
+.top{
+        display: flex;
+        align-items: center;
+        color: #FDE5EC;
+        font-family: 'Kadwa', serif;
+        background-color: #955FB6;
+        padding: 0px 30px;
+        border-radius: 10px 10px 0 0;
+        
+}
+
+.top img{
+        width: 40px; /* Set the desired width */
+        height: 40px; /* Maintain the aspect ratio */
+        padding-right: 20px;
+}
+
+/* Style for labels inside the form */
+form label {
+    display: block; /* Display labels as block elements */
+    text-align: left; /* Align text to the left */
+    padding-left: 35px; /* Add 5px of left padding */
+    margin: 40px 0 2px 0; /* Add some spacing between labels */
+    color: #817373;
+}
+
+form input{
+    border: 2px solid #39285C;
+    background-color: white;
+    padding-left: 5px;
+    margin: 0 30px;
+    width: 500px;
+}
+
+/* Style for the form itself */
+form {
+    text-align: center; /* You can center-align the form text if needed */
+
+}
+
+.signin-button {
+    margin-top: 30px; /* Adjust the vertical spacing as needed */
+    text-align: right; /* Align the button to the right within its container */
+    background-color:#F09090 ;
+    border: 1px solid #4D344C;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Style for the forgot password text */
+.forgot-password {
+    margin-bottom: 50px;
+    color: #5D4F73;
+    cursor: pointer;
+}
+
+/* Style for the body when the login popup is open */
+body.popup-open {
+    overflow: hidden;
+}
+
+
+/* Additional styles can be added to customize the appearance */
+
 @media (max-width: 960px) {
     .offers {
         grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */

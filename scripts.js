@@ -60,4 +60,18 @@ function showSlide(index) {
     showImage(); // Start displaying images from the selected index
 }
 
+// JavaScript function to open the login popup
+function openLoginPopup() {
+    var popup = document.getElementById('loginPopup');
+    popup.style.display = 'block';
+    document.body.classList.add('popup-open'); // Add the class
+}
+
+// JavaScript function to close the login popup
+function closeLoginPopup() {
+    var popup = document.getElementById('loginPopup');
+    popup.style.display = 'none';
+    document.body.classList.remove('popup-open'); // Remove the class
+}
+
 showImage();
